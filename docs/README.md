@@ -1,1 +1,1 @@
-## Enter Contents or remove file ater folder creation
+## Enter Contents or remove file after folder creation
