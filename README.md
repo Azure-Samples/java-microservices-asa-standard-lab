@@ -51,7 +51,7 @@ This lab has modules on:
 * Protect endpoints using Web Application Firewalls
 * Secure MySQL database and Key Vault using a Private Endpoint
 
-The lab is available as GitHub pages [here](https://azure-samples.github.io/java-microservices-aks-lab/)
+The lab is available as GitHub pages [here](https://azure-samples.github.io/java-microservices-asa-standard-lab/)
 
 ## Getting Started
 
