@@ -8,7 +8,7 @@ lab:
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 You have created your first Spring Apps service, installed your microservices as apps and exposed them through the `api-gateway`. Now that everything is up and running, it would be helpful to be able to monitor the availability of your apps and detect any errors or exceptions that might occur during their usage. In this lab, you will implement their end-to-end monitoring.
 
