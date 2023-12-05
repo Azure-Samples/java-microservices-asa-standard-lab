@@ -2,7 +2,7 @@
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 You have established a plan for migrating the Spring Petclinic application to Azure Spring Apps. It is now time to perform the actual migration of the Spring Petclinic application components.
 
