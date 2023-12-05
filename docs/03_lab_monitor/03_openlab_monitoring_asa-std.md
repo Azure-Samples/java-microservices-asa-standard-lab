@@ -24,7 +24,7 @@ After you complete this challenge, you will be able to:
 
 The below image illustrates the end state you will be building in this challenge.
 
-![Challenge 3 architecture](./images/asa-openlab-3.png)
+![Challenge 3 architecture](../images/asa-openlab-3.png)
 
 ## Lab Duration
 
