@@ -24,7 +24,7 @@ After you complete this lab, you will be able to:
 
 The below image illustrates the end state you will be building in this lab.
 
-![lab 6 overview](../../images/lab6.png)
+![lab 6 overview](../images/asa-openlab-6.png)
 
 ## Lab Duration
 
