@@ -2,13 +2,39 @@
 
 server:
   # start services on random port by default
-  # port: 0
+  port: 0
   # The stop processing uses a timeout which provides a grace period during which existing requests will be allowed to complete but no new requests will be permitted
   shutdown: graceful
  
 # embedded database init, supports mysql too trough the 'mysql' spring profile
 spring:
-  cloud:  
+  sql:
+    init:
+      schema-locations: classpath*:db/mysql/schema.sql
+      data-locations: classpath*:db/mysql/data.sql
+      mode: ALWAYS
+  jms:
+    servicebus:
+      connection-string: ${spring.jms.servicebus.connectionstring}
+      idle-timeout: 60000
+      pricing-tier: premium
+  sleuth:
+    sampler:
+      probability: 1.0
+  cloud:
+    config:
+      # Allow the microservices to override the remote properties with their own System properties or config file
+      allow-override: true
+      # Override configuration with any local property source
+      override-none: true
+    azure:
+      keyvault:
+        secret:
+          property-source-enabled: true
+          property-sources:
+            - name: key-vault-property-source-1
+              endpoint: https://<your-kv-name>.vault.azure.net/
+              credential.managed-identity-enabled: true
     stream: 
       bindings:
         supply-out-0:
@@ -26,28 +52,6 @@ spring:
       poller:
         initial-delay: 0
         fixed-delay: 1000  
-    config:
-      # Allow the microservices to override the remote properties with their own System properties or config file
-      allow-override: true
-      # Override configuration with any local property source
-      override-none: true
-  datasource:
-    url: jdbc:mysql://<your-mysql-server-name>.mysql.database.azure.com:3306/petclinic?useSSL=true&serverTimezone=UTC
-    username: mysql_conn
-    azure.passwordless-enabled: true
-  sql:
-    init:
-      schema-locations: classpath*:db/mysql/schema.sql
-      data-locations: classpath*:db/mysql/data.sql
-      mode: ALWAYS
-  jms:
-    servicebus:
-      connection-string: ${spring.jms.servicebus.connectionstring}
-      idle-timeout: 60000
-      pricing-tier: premium
-  sleuth:
-    sampler:
-      probability: 1.0
   jpa:
     open-in-view: false
     hibernate:
