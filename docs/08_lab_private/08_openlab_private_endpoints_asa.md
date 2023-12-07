@@ -1,4 +1,9 @@
-
+---
+title: 'Lab 8: Secure MySQL database and Key Vault using a Private Endpoint'
+layout: default
+nav_order: 10
+has_children: true
+---
 
 # Challenge 08: Secure MySQL database and Key Vault using a Private Endpoint
 
