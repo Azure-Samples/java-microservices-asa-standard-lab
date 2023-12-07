@@ -11,39 +11,40 @@ has_children: true
 
 ## Lab scenario
 
-By now, you have completed setting up your Spring Boot application in Azure on AKS and secured the secrets used by the microservices to connect to their data store. You are satisfied with the results, but you do recognize that there is still room for improvement. In particular, you are concerned with the public endpoints of the application which are directly accessible to anyone with access to the internet. You would like to add a Web Application Firewall to filter incoming requests to your application. In this exercise, you will step through implementing this configuration.
+By now, you have completed setting up your Spring Petclinic application in Azure, secured the secrets used by the microservices, and used passwordless connections to connect to their data store. You are satisfied with the results, but you do recognize that there is still room for improvement. In particular, you are concerned with the public endpoints of the application which are directly accessible to anyone with access to the internet. You would like to add a Web Application Firewall to filter incoming requests to your application. In this exercise, you will step through implementing this configuration.
 
 ## Objectives
 
-After you complete this lab, you will be able to:
+After you complete this challenge, you will be able to:
 
-- Update your microservices to use an internal loadbalancer
-- Create additional networking resources
+- Create networking resources
+- Recreate Azure Spring Apps service and apps in the virtual network
+- Configure a private DNS zone
 - Acquire a certificate and add it to Key Vault
+- Configure a domain in Azure Spring Apps
 - Create the Application Gateway resources
 - Access the application by DNS name
-- Expose the admin server
 - Configure WAF on Application Gateway
 
-The below image illustrates the end state you will be building in this lab.
+The below image illustrates the end state you will be building in this challenge.
 
-![lab 7 overview](../../images/lab7.png)
+![Challenge 7 architecture](../images/asa-openlab-7.png)
 
-## Lab Duration
+## Challenge Duration
 
 - **Estimated Time**: 60 minutes
 
 ## Instructions
 
-During this lab, you will:
+During this challenge, you will:
 
-- Update your microservices to use an internal loadbalancer
-- Create additional networking resources
+- Create networking resources
+- Recreate Azure Spring Apps service and apps in the virtual network
+- Configure a private DNS zone
 - Acquire a certificate and add it to Key Vault
+- Configure a domain in Azure Spring Apps
 - Create the Application Gateway resources
 - Access the application by DNS name
-- Expose the admin server
 - Configure WAF on Application Gateway
 
-{: .note }
-> The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+   > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
