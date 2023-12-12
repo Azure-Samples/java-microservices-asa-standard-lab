@@ -1,25 +1,45 @@
 ---
-title: Online Hosted Instructions
-permalink: index.html
+title: Introduction
 layout: home
+nav_order: 1
 ---
 
-# Content Directory
+# Lab: Deploying and running Java Applications in Azure Spring Apps Standard
 
-Hyperlinks to each of the lab exercises and demos are listed below.
+This lab teaches you how to deploy the [Spring Petclinic Microservices](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/main/src) application to an Azure Spring Apps Standard instance and integrate it with additional Azure services.
 
-## Labs
+## Modules
 
-{% assign labs = site.pages | where_exp:"page", "page.url contains '/Instructions/Labs'" %}
-| Module | Lab |
-| --- | --- | 
-{% for activity in labs  %}| {{ activity.lab.module }} | [{{ activity.lab.title }}{% if activity.lab.type %} - {{ activity.lab.type }}{% endif %}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
+This lab has modules on:
 
-## Demos
+* Plan a Java application migration to Azure Spring Apps Standard
+* Migrate a Spring Apps microservices application to Azure Spring Apps Standard
+* Enable monitoring and end-to-end tracing
+* Secure application secrets using Key Vault
+* Create and configure Azure Service Bus for sending messages between microservices
+* Create and configure Azure Event Hubs for sending events between microservices
+* Protect endpoints using Web Application Firewalls
+* Secure MySQL database and Key Vault using a Private Endpoint
 
-{% assign demos = site.pages | where_exp:"page", "page.url contains '/Instructions/Demos'" %}
-| Module | Demo |
-| --- | --- | 
-{% for activity in demos  %}| {{ activity.demo.module }} | [{{ activity.demo.title }}]({{ site.github.url }}{{ activity.url }}) |
-{% endfor %}
+The lab is available as GitHub pages [here](https://azure-samples.github.io/java-microservices-asa-standard-lab/)
+
+## Getting Started
+
+### Prerequisites
+
+For running this lab you will need:
+
+* A GitHub account
+* An Azure Subscription
+
+### Installation
+
+For running this lab with all the needed tooling, there are 3 options available:
+
+* Using a GitHub codespace  
+* Using Visual Studio Code with remote containers option
+* Install all the tools on your local machine
+
+All the steps of this lab have been tested in the GitHub CodeSpace. This is the preferred option for running this lab!
+
+Full installation guidance and options for running this lab can be found in the [Installation]({% link install.md %}) instructions.
