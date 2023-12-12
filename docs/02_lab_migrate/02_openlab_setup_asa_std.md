@@ -1,4 +1,11 @@
-# Challenge 02: Migrate a Spring Apps application to Azure
+---
+title: 'Lab 2: Migrate a Spring Apps application to Azure'
+layout: default
+nav_order: 4
+has_children: true
+---
+
+# Lab 02: Migrate a Spring Apps application to Azure
 
 # Student manual
 
