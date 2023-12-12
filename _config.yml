@@ -1,17 +1,28 @@
-remote_theme: MicrosoftLearning/Jekyll-Theme
-exclude:
-  - readme.md
-  - .github/
-header_pages:
-  - index.html
-author: Microsoft Learning
-twitter_username: mslearning
-github_username:  MicrosoftLearning
-plugins:
-  - jekyll-sitemap
-  - jekyll-mentions
-  - jemoji
-markdown: kramdown
-kramdown:
-   syntax_highlighter_opts:
-      disable : true
+
+title: Java Spring Apps on Azure Spring Apps Standard
+description: This lab walks you through the creation Azure Spring Apps integrated with multiple Azure service, and deploy an application with Front End supported by various backend microservices
+theme: just-the-docs
+
+# url: https://Azure-Samples.github.io/java-microservices-asa-standard-lab
+
+aux_links:
+  "Java Spring Apps on Azure Spring Apps Standard on GitHub": 
+    - "https://github.com/Azure-Samples/java-microservices-asa-standard-lab"
+
+
+callouts_level: quiet # or loud
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
