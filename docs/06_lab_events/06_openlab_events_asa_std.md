@@ -1,7 +1,7 @@
 ---
 title: 'Lab 6: Send events between microservices'
 layout: default
-nav_order: 8
+nav_order: 6
 has_children: true
 ---
 
