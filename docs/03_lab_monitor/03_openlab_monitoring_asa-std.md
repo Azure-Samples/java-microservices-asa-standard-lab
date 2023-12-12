@@ -1,7 +1,8 @@
 ---
-lab:
-    Title: 'Challenge 03: Enable monitoring and end-to-end tracing'
-    Learn module: 'Learn Module 3: Enable monitoring and end-to-end tracing'
+title: 'Lab 3: Enable monitoring'
+layout: default
+nav_order: 5
+has_children: true
 ---
 
 # Challenge 03: Enable monitoring and end-to-end tracing
