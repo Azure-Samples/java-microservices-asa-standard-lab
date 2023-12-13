@@ -65,7 +65,7 @@ To get started, follow the following steps:
    ```bash
    mkdir workspaces
    cd workspaces
-   git clone https://github.com/<your-github-account>/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps.git
+   git clone https://github.com/<your-github-account>/java-microservices-asa-standard-lab.git
    ```
 
 1. When prompted to sign in to GitHub, select the **Sign in with your browser** option. This will automatically open a new tab in the web browser window, prompting you to provide your GitHub username and password.
@@ -76,10 +76,10 @@ To get started, follow the following steps:
 
     > **Note**: However in one of the lab steps you will put a GitHub PAT token in one of the configuration files, make sure to **not** commit this PAT token, since it will immediately get invalidated by GitHub. Once invalidated your next lab steps will fail. You can use the [LabTips]({% link LabTips.md %}) to recover from this.
 
-1. Navigate into the `Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src` folder that got created.
+1. Navigate into the `java-microservices-asa-standard-lab/src` folder that got created.
 
    ```bash
-   cd Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd java-microservices-asa-standard-lab/src
    ```
 
 1. Open the project with Visual Studio Code
@@ -140,7 +140,7 @@ Once all these tools are installed, to get started you need to:
    ```bash
    mkdir workspaces
    cd workspaces
-   git clone https://github.com/<your-github-account>/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps.git
+   git clone https://github.com/<your-github-account>/java-microservices-asa-standard-lab.git
    ```
 
 1. When prompted to sign in to GitHub, select the **Sign in with your browser** option. This will automatically open a new tab in the web browser window, prompting you to provide your GitHub username and password.

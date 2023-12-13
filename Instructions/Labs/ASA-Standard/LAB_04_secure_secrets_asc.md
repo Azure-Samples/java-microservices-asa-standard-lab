@@ -208,7 +208,7 @@ You now have all relevant components in place to switch to the secrets stored in
 1. Save the file and commit and push these changes to your remote config repository.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps
+   cd ~/workspaces/java-microservices-asa-standard-lab
    git add .
    git commit -m 'added key vault'
    git push
@@ -216,7 +216,7 @@ You now have all relevant components in place to switch to the secrets stored in
 
 ### Update, rebuild, and redeploy each app
 
-1. From the Git Bash window, in the `Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps` repository you cloned locally, use your favorite text editor to open the `pom.xml` files of the customers, visits and vets services (within the `src/spring-petclinic-customers-service`, `src/spring-petclinic-visits-service`, and `src/spring-petclinic-vets-service` directories). For each, add the following dependencies (within the `<dependencies>...</dependencies>` section) and save the change.
+1. From the Git Bash window, in the `java-microservices-asa-standard-lab` repository you cloned locally, use your favorite text editor to open the `pom.xml` files of the customers, visits and vets services (within the `src/spring-petclinic-customers-service`, `src/spring-petclinic-visits-service`, and `src/spring-petclinic-vets-service` directories). For each, add the following dependencies (within the `<dependencies>...</dependencies>` section) and save the change.
 
    ```xml
            <dependency>
@@ -255,7 +255,7 @@ You now have all relevant components in place to switch to the secrets stored in
 1. Rebuild the services by running the following command in the root directory of the application.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests
    ```
 

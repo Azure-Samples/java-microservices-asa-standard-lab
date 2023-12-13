@@ -173,7 +173,7 @@ As part of the setup process, you need to create a Personal Access Token (PAT) i
    git clone https://<token>@github.com/<your-github-username>/spring-petclinic-microservices-config.git
     
    # Clone source code repo
-   git clone https://<token>@github.com/<your-github-username>/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps.git
+   git clone https://<token>@github.com/<your-github-username>/java-microservices-asa-standard-lab.git
 
    ```
 
@@ -349,7 +349,7 @@ You now have the compute and data services available for deployment of the compo
 1. You will start by building all the microservice of the spring petclinic application. To accomplish this, run `mvn clean package` in the root directory of the application.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests
    ```
 

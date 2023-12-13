@@ -120,7 +120,7 @@ This translates the secret in Key Vault to the correct application property for 
 1. Commit and push your changes to the remote repository.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps
+   cd ~/workspaces/java-microservices-asa-standard-lab
    git add .
    git commit -m 'added service bus'
    git push
@@ -147,7 +147,7 @@ In the spring-petclinic-microservices repository, the `spring-petclinic-messagin
 1. Update the compiled version of the microservices available by running an additional build.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests -rf :spring-petclinic-messaging-emulator
    ```
 

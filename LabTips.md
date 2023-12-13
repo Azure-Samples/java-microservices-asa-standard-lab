@@ -55,7 +55,7 @@ To rebuild and redeploy a failing microservice:
 1. Navigate to the root of the application and rebuild the specific microservice.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests -rf :spring-petclinic-<microservice-name>
    ```
 

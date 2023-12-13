@@ -317,10 +317,10 @@ You will now implement the functionality that will allow you to emulate sending 
    git push   
    ```
 
-1. From the Git Bash window, set the current working directory to the `Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src` folder and run a maven build.
+1. From the Git Bash window, set the current working directory to the `java-microservices-asa-standard-lab/src` folder and run a maven build.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests -rf :spring-petclinic-customers-service
    ```
 
@@ -524,7 +524,7 @@ In this task, you will update the vets microservice to receive events from the t
 1. Make sure you saved all the files you just changed. In the Git Bash window, navigate back to the root folder of the spring petclinic repository and rebuild the vets microservice.
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests -rf :spring-petclinic-vets-service
    ```
 

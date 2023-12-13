@@ -183,7 +183,7 @@ The following three apps of your application use the database hosted by the Azur
 <summary>hint</summary>
 <br/>
 
-1. From the Git Bash window, in the `Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps` repository you cloned locally, use your favorite text editor to open the `pom.xml` files of the customers, visits and vets services (within the `src/spring-petclinic-customers-service`, `src/spring-petclinic-visits-service`, and `src/spring-petclinic-vets-service` directories). For each, replace the `mysql-connector-j` dependency (within the `<dependencies>...</dependencies>` section)  with the `spring-cloud-azure-starter-jdbc-mysql` dependency and save the file:
+1. From the Git Bash window, in the `java-microservices-asa-standard-lab` repository you cloned locally, use your favorite text editor to open the `pom.xml` files of the customers, visits and vets services (within the `src/spring-petclinic-customers-service`, `src/spring-petclinic-visits-service`, and `src/spring-petclinic-vets-service` directories). For each, replace the `mysql-connector-j` dependency (within the `<dependencies>...</dependencies>` section)  with the `spring-cloud-azure-starter-jdbc-mysql` dependency and save the file:
 
    ```xml
         <!-- Replace this dependency -->
@@ -205,7 +205,7 @@ The following three apps of your application use the database hosted by the Azur
 1. Rebuild the microservices by running the below command in the git bash window:
 
    ```bash
-   cd ~/workspaces/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src
+   cd ~/workspaces/java-microservices-asa-standard-lab/src
    mvn clean package -DskipTests
    ```
 
