@@ -12,7 +12,8 @@ For running this lab with all the needed tooling, there are 3 options available:
 - TOC
 {:toc}
 
-  > **Important**: All the steps of this lab have been tested in the [GitHub CodeSpace](#using-a-github-codespace). This is the preferred option for running this lab!
+   {: .important }
+   > All the steps of this lab have been tested in the [GitHub CodeSpace](#using-a-github-codespace). This is the preferred option for running this lab!
 
 ## Using a GitHub Codespace
 
