@@ -1,3 +1,9 @@
+---
+title: 'Lab Tips and troubleshooting'
+layout: default
+nav_order: 11
+---
+
 # A couple of tips when you run this lab
 
 An overview of the tips in this section:

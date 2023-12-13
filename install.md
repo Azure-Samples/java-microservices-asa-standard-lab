@@ -20,7 +20,7 @@ The [git repository of this lab](https://github.com/Azure-Samples/java-microserv
 
 1. Navigate to the [GitHub repository of this lab](https://github.com/Azure-Samples/java-microservices-asa-standard-lab) and select **Fork**.
 
-  > **Note**: In case you are using a GitHub EMU account, it might be you are not able to fork a public repository. In that case, create a new repository with the same name, clone the original repository, add your new repository as a remote and push to this new remote.
+   > **Note**: In case you are using a GitHub EMU account, it might be you are not able to fork a public repository. In that case, create a new repository with the same name, clone the original repository, add your new repository as a remote and push to this new remote.
 
 1. Make sure your own username is indicated as the fork `Owner`
 
@@ -40,15 +40,15 @@ The [git repository of this lab](https://github.com/Azure-Samples/java-microserv
 
 - Visual Studio Code available from [Visual Studio Code Downloads](https://code.visualstudio.com/download)
 - Latest Git for Windows available from [Git Downloads](https://git-scm.com/downloads), or similar on another OS.
-  > **Note**: If needed, reinstall Git and, during installation, ensure that the Git Credential Manager is enabled.
+    > **Note**: If needed, reinstall Git and, during installation, ensure that the Git Credential Manager is enabled.
 - [Visual Studio Code Remote Containers option](https://code.visualstudio.com/docs/remote/containers). 
 - [docker](https://docs.docker.com/get-docker/).
 
-  > **Note**: Following the installation of Git, ensure to set the global configuration variables `user.email` and `user.name` by running the following commands from the Git Bash shell (replace the `<your-email-address>` and `<your-full-name>` placeholders with your email address and your full name):
-  ```bash
-  git config --global user.email "<your-email-address>"
-  git config --global user.name "<your-full-name>"
-  ```
+    > **Note**: Following the installation of Git, ensure to set the global configuration variables `user.email` and `user.name` by running the following commands from the Git Bash shell (replace the `<your-email-address>` and `<your-full-name>` placeholders with your email address and your full name):
+    ```bash
+    git config --global user.email "<your-email-address>"
+    git config --global user.name "<your-full-name>"
+    ```
 
 To get started, follow the following steps: 
 
@@ -58,7 +58,7 @@ To get started, follow the following steps:
 
 1. Select **Create fork**. This will create a copy or fork of this project in your own account.
 
-  > **Note**: In case you are using a GitHub EMU account, it might be you are not able to fork a public repository. In that case, create a new repository with the same name, clone the original repository, add your new repository as a remote and push to this new remote.
+    > **Note**: In case you are using a GitHub EMU account, it might be you are not able to fork a public repository. In that case, create a new repository with the same name, clone the original repository, add your new repository as a remote and push to this new remote.
 
 1. On your lab computer, in the Git Bash window, run the following commands to clone your fork of the spring-petclinic-microservices project to your workstation. Make sure to replace `<your-github-account>` in the below command:
 
