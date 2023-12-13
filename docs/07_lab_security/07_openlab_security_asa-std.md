@@ -47,4 +47,4 @@ During this challenge, you will:
 - Access the application by DNS name
 - Configure WAF on Application Gateway
 
-   > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+    > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.

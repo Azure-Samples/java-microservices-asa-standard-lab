@@ -42,7 +42,7 @@ During this challenge, you will:
 - Update application config
 - Update, rebuild, and redeploy each app
 
-   > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+    > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
 
 ### Create an Azure Key Vault instance
 
@@ -65,7 +65,7 @@ You will start by creating an Azure Key Vault instance that will host your appli
        --sku standard
    ```
 
-   > **Note**: Wait for the provisioning to complete. This might take about 2 minutes.
+    > **Note**: Wait for the provisioning to complete. This might take about 2 minutes.
 
 </details>
 
@@ -143,7 +143,7 @@ The following three apps of your application use the database hosted by the Azur
         --user-assigned $VETS_SERVICE_ID
    ```
 
-    > **Note**: Wait for the operations to complete. This might take about 3 minutes each.
+     > **Note**: Wait for the operations to complete. This might take about 3 minutes each.
 
 </details>
 
@@ -308,7 +308,7 @@ You now have all relevant components in place to switch to the secrets stored in
    az spring app logs --name ${CUSTOMERS_SERVICE} --follow 
    ```
 
-   > **Note**: In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+    > **Note**: In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
 
 1. To verify that secrets from Key Vault are picked up, in the Azure Portal, navigate to the page of the Azure Key Vault instance you provisioned. On the Overview page, select the **Monitoring** tab and review the graph representing requests for access to the vault's secrets.
 

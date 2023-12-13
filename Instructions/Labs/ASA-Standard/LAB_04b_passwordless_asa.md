@@ -38,7 +38,7 @@ During this challenge, you will:
 - Create service connections from the microservices to the database server
 - Update the applications to use passwordless connectivity
 
-   > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+    > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
 
 ### Delete secrets from Key Vault
 
@@ -255,7 +255,7 @@ The following three apps of your application use the database hosted by the Azur
    az spring app logs --name ${CUSTOMERS_SERVICE} --follow 
    ```
 
-   > **Note**: In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+    > **Note**: In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
 
 </details>
 
