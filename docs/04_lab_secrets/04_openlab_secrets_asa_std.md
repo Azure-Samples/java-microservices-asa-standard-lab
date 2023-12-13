@@ -5,6 +5,10 @@ nav_order: 6
 has_children: true
 ---
 
+# Lab 04: Secure application secrets using Key Vault
+
+# Student manual
+
 ## Lab scenario
 
 Your team is now running a first version of the `spring-petclinic` microservice application in Azure. However you are concerned that your application secrets are stored directly in configuration code. As a matter of fact, GitHub has been generating notifications informing you about this vulnerability. You want to remediate this issue and implement a secure method of storing application secrets that are part of the database connection string. In this unit, you will step through implementing such method.
