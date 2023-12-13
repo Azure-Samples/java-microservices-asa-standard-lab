@@ -339,7 +339,7 @@ You will now implement the functionality that will allow you to emulate sending 
    ```
 
    {: .note }
-   > In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+   > In case you see errors, review the steps you executed and retry. The [LabTips file]({% link LabTips.md %}) also contains steps on how to recover from errors.
 
 1. With the log stream still open, in your browser window, navigate to the applications public endpoint and select `Owners - Register`. On the registration page, fill out the details for a new owner and select `Submit`. When you select `Submit` you should see output in the `customers` service logs indicating events were send to the eventhub. 
 
@@ -554,7 +554,7 @@ To conclude this lab, you will create another owner in the application to send e
    ```
 
    {: .note }
-   > In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+   > In case you see errors, review the steps you executed and retry. The [LabTips file]({% link LabTips.md %}) also contains steps on how to recover from errors.
 
 1. In your browser window, navigate to the applications' public endpoint and select `Owners - Register`. On the registration page, fill out the details for a new owner and select `Submit`. When you select `Submit` you should see output in the `vets` service logs indicating events were received from the eventhub. 
 
