@@ -15,7 +15,7 @@ You want to establish a plan for migrating your existing Spring Petclinic micros
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Examine the application components based on the information provided in its GitHub repository
 - Identify the Azure services most suitable for hosting your application
@@ -23,13 +23,13 @@ After you complete this challenge, you will be able to:
 - Identify how you organize resources in Azure
 - Identify tools for connecting to and managing your Azure environment
 
-## Challenge Duration
+## Lab Duration
 
 - **Estimated Time**: 45 minutes
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Examine the application components based on the information provided in its GitHub repository
 - Consider the Azure services most suitable for hosting your application
@@ -37,4 +37,4 @@ During this challenge, you will:
 - Consider how you organize resources in Azure
 - Consider tools for connecting to and managing your Azure environment
 
-This first challenge will be mainly a conceptual exercise that does not involve deploying any of the application components to Azure. You will run the initial deployment in the next exercise.
+This first lab will be mainly a conceptual exercise that does not involve deploying any of the application components to Azure. You will run the initial deployment in the next exercise.

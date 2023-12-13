@@ -1,37 +1,37 @@
 ---
 lab:
-    Title: 'Challenge 05: Create and configure Azure Service Bus for Azure Spring Apps'
+    Title: 'Lab 05: Create and configure Azure Service Bus for Azure Spring Apps'
     Learn module: 'Learn module 5: Create and configure Azure Service Bus for Azure Spring Apps'
 ---
 
-# Challenge 05: Create and configure Azure Service Bus for Azure Spring Apps
+# Lab 05: Create and configure Azure Service Bus for Azure Spring Apps
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 You have now set up and deployed the Spring Petclinic application. Some of the microservices however also need to send messages to a third party system over a message bus and you want to enable an intake of telemetry events. You want to provide this functionality with native Azure services such as Azure Service Bus and Azure Event Hub. You will start by implementing support for outbound messaging.
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create Azure Service Bus resources
 - Test the messaging functionality
 - Update the remaining microservice to use the message queues
 - Add the message producers and listeners
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 5 architecture](./images/asa-openlab-5.png)
+![Lab 5 architecture](./images/asa-openlab-5.png)
 
-## Challenge Duration
+## Lab Duration
 
 - **Estimated Time**: 60 minutes
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create Azure Service Bus resources
 - Test the messaging functionality

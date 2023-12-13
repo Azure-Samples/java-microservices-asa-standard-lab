@@ -11,7 +11,7 @@ Your team is now running a first version of the `spring-petclinic` microservice 
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create an Azure Key Vault instance
 - Store your connection string elements as Azure Key Vault secrets
@@ -24,9 +24,9 @@ After you complete this challenge, you will be able to:
 - Create service connections from the microservices to the database server
 - Update the applications to use passwordless connectivity
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 4 architecture](../images/asa-openlab-4b.png)
+![Lab 4 architecture](../images/asa-openlab-4b.png)
 
 ## Lab Duration
 
@@ -34,7 +34,7 @@ The below image illustrates the end state you will be building in this challenge
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create an Azure Key Vault instance
 - Store your connection string elements as Azure Key Vault secrets

@@ -1,37 +1,37 @@
 ---
 lab:
-    Title: 'Challenge 06: Configure Azure Event Hubs for Azure Spring Apps'
+    Title: 'Lab 06: Configure Azure Event Hubs for Azure Spring Apps'
     Learn module: 'Learn module 6: Configure Azure Event Hubs for Azure Spring Apps'
 ---
 
-# Challenge 06: Configure Azure Event Hubs for Azure Spring Apps
+# Lab 06: Configure Azure Event Hubs for Azure Spring Apps
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 You have completed implement messaging functionality for the Spring Petclinic application. Now, you will implement the event processing functionality by integrating your application with Event Hub.
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create an Azure Event Hub resource
 - Update an existing microservice to send events to the Event Hub
 - Update an existing microservice to receive Event Hub events
 - Inspect telemetry data being received
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 6 architecture](./images/asa-openlab-6.png)
+![Lab 6 architecture](./images/asa-openlab-6.png)
 
-## Challenge Duration
+## Lab Duration
 
 - **Estimated Time**: 60 minutes
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create an Azure Event Hub resource
 - Update an existing microservice to send events to the Event Hub

@@ -1,20 +1,20 @@
 ---
 lab:
-    Title: 'Challenge 04: Secure application secrets using Key Vault'
+    Title: 'Lab 04: Secure application secrets using Key Vault'
     Learn module: 'Learn module 4: Secure application secrets using Key Vaults'
 ---
 
-# Challenge 04: Secure application secrets using Key Vault
+# Lab 04: Secure application secrets using Key Vault
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 Your team is now running a first version of the `spring-petclinic` microservice application in Azure. However you are concerned that your application secrets are stored directly in configuration code. As a matter of fact, GitHub has been generating notifications informing you about this vulnerability. You want to remediate this issue and implement a secure method of storing application secrets that are part of the database connection string. In this unit, you will step through implementing such method.
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create an Azure Key Vault instance
 - Store your connection string elements as Azure Key Vault secrets
@@ -23,9 +23,9 @@ After you complete this challenge, you will be able to:
 - Update application config
 - Update, rebuild, and redeploy each app
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 4 architecture](./images/asa-openlab-4.png)
+![Lab 4 architecture](./images/asa-openlab-4.png)
 
 ## Lab Duration
 
@@ -33,7 +33,7 @@ The below image illustrates the end state you will be building in this challenge
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create an Azure Key Vault instance
 - Store your connection string elements as Azure Key Vault secrets

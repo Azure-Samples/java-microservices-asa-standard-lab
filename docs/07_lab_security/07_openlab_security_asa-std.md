@@ -15,7 +15,7 @@ By now, you have completed setting up your Spring Petclinic application in Azure
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create networking resources
 - Recreate Azure Spring Apps service and apps in the virtual network
@@ -26,17 +26,17 @@ After you complete this challenge, you will be able to:
 - Access the application by DNS name
 - Configure WAF on Application Gateway
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 7 architecture](../images/asa-openlab-7.png)
+![Lab 7 architecture](../images/asa-openlab-7.png)
 
-## Challenge Duration
+## Lab Duration
 
 - **Estimated Time**: 60 minutes
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create networking resources
 - Recreate Azure Spring Apps service and apps in the virtual network

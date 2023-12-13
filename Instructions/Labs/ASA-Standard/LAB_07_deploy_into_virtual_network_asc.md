@@ -1,20 +1,20 @@
 ---
 lab:
-    Title: 'Challenge 07: Protect endpoints using Web Application Firewalls'
+    Title: 'Lab 07: Protect endpoints using Web Application Firewalls'
     Learn module: 'Learn module 7: Protect endpoints using Web Application Firewall'
 ---
 
-# Challenge 07: Protect endpoints using Web Application Firewall
+# Lab 07: Protect endpoints using Web Application Firewall
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 By now, you have completed setting up your Spring Petclinic application in Azure, secured the secrets used by the microservices, and used passwordless connections to connect to their data store. You are satisfied with the results, but you do recognize that there is still room for improvement. In particular, you are concerned with the public endpoints of the application which are directly accessible to anyone with access to the internet. You would like to add a Web Application Firewall to filter incoming requests to your application. In this exercise, you will step through implementing this configuration.
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Create networking resources
 - Recreate Azure Spring Apps service and apps in the virtual network
@@ -25,17 +25,17 @@ After you complete this challenge, you will be able to:
 - Access the application by DNS name
 - Configure WAF on Application Gateway
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 7 architecture](./images/asa-openlab-7.png)
+![Lab 7 architecture](./images/asa-openlab-7.png)
 
-## Challenge Duration
+## Lab Duration
 
 - **Estimated Time**: 60 minutes
 
 ## Instructions
 
-During this challenge, you will:
+During this lab, you will:
 
 - Create networking resources
 - Recreate Azure Spring Apps service and apps in the virtual network

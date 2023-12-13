@@ -1,20 +1,20 @@
 ---
 lab:
-    Title: 'Challenge 03: Enable monitoring and end-to-end tracing'
+    Title: 'Lab 03: Enable monitoring and end-to-end tracing'
     Learn module: 'Learn Module 3: Enable monitoring and end-to-end tracing'
 ---
 
-# Challenge 03: Enable monitoring and end-to-end tracing
+# Lab 03: Enable monitoring and end-to-end tracing
 
 # Student manual
 
-## Challenge scenario
+## Lab scenario
 
 You have created your first Spring Apps service, installed your microservices as apps and exposed them through the `api-gateway`. Now that everything is up and running, it would be helpful to be able to monitor the availability of your apps and detect any errors or exceptions that might occur during their usage. In this lab, you will implement their end-to-end monitoring.
 
 ## Objectives
 
-After you complete this challenge, you will be able to:
+After you complete this lab, you will be able to:
 
 - Live stream the logs from your apps
 - Configure Application Insights to receive monitoring information from your apps
@@ -22,9 +22,9 @@ After you complete this challenge, you will be able to:
 - Configure diagnostics settings
 - Analyze logs
 
-The below image illustrates the end state you will be building in this challenge.
+The below image illustrates the end state you will be building in this lab.
 
-![Challenge 3 architecture](./images/asa-openlab-3.png)
+![Lab 3 architecture](./images/asa-openlab-3.png)
 
 ## Lab Duration
 
@@ -32,7 +32,7 @@ The below image illustrates the end state you will be building in this challenge
 
 ## Instructions
 
-In this challenge, you will:
+In this lab, you will:
 
 - Live stream the logs from your apps
 - Configure Application Insights to receive monitoring information from your apps
