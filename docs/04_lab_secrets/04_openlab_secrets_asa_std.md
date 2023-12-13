@@ -1,7 +1,7 @@
 ---
 title: 'Lab 4: Secure secrets using Key Vault'
 layout: default
-nav_order: 4
+nav_order: 6
 has_children: true
 ---
 
