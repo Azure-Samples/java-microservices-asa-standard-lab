@@ -203,7 +203,7 @@ You now have all relevant components in place to switch to the secrets stored in
 <summary>hint</summary>
 <br/>
 
-1. From the Git Bash window, in the config repository you cloned locally, use your favorite text editor to open the `application.yml` file. Replace the contents of this file with the contents of this [application.yml](../../../config/04_application.yml) file. This file contains the following changes:
+1. From the Git Bash window, in the config repository you cloned locally, use your favorite text editor to open the `application.yml` file. Replace the contents of this file with the contents of this [application.yml](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/main/config/04_application.yml) file. This file contains the following changes:
 
     * The spring.datasource properties are no longer there. These are now in your Key Vault and are no longer needed in the application.yml file.
     * Line 25 to 32 contain new config for your Key Vault. Make sure you replace the `<your-kv-name>` placeholder on line 31 with the name of your Key Vault.

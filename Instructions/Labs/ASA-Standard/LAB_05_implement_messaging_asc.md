@@ -116,7 +116,7 @@ This translates the secret in Key Vault to the correct application property for 
        --vault-name $KEYVAULT_NAME
    ```
 
-1. In your configuration repository replace the `application.yml` with the contents of [this application.yml](../../config/05_application.yml) file. This file contains the following changes:
+1. In your configuration repository replace the `application.yml` with the contents of [this application.yml](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/main/config/05_application.yml) file. This file contains the following changes:
 
    * It adds the `spring.jms.servicebus` configuration on lines 16 to 20.
    * Make sure you replace the `<your-kv-name>` replacement value with the name of your Key Vault.

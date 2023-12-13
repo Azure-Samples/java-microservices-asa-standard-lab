@@ -300,7 +300,7 @@ You will now implement the functionality that will allow you to emulate sending 
 
 1. Save the changes to all 4 files.
 
-1. In the config repository you will need to add the configuration for sending messages to the event hub. Replace the contents of the current `application.yml` file with the contents of [this application.yml](../../../config/06_application.yml) file. Make sure you fill out your current Key Vault name on line `36`. This file includes the following changes:
+1. In the config repository you will need to add the configuration for sending messages to the event hub. Replace the contents of the current `application.yml` file with the contents of [this application.yml](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/main/config/06_application.yml) file. Make sure you fill out your current Key Vault name on line `36`. This file includes the following changes:
 
    - It configures the output stream for `supply-out-0` to use the telemetry endpoint of the event hub on line `40`.
    - It indicates the namespace you want to connect to on line `51`. Make sure to provide here the name of your event hubs namespace.
@@ -393,7 +393,7 @@ In this task, you will update the vets microservice to receive events from the t
    az role assignment create --assignee $VETS_SERVICE_CID --role 'Storage Blob Data Owner' --scope $STORAGE_ACCOUNT_ID/containers/$STORAGE_CONTAINER
    ```
 
-1. In the config repository you will need to add the configuration for receiving messages from the event hub. Replace the contents of the current `application.yml` file with the contents of [this application.yml](../../../config/06b_application.yml) file. Make sure you fill out your current Key Vault name on line `36` and the name of your event hub namespace on line `54`. This file includes the following changes:
+1. In the config repository you will need to add the configuration for receiving messages from the event hub. Replace the contents of the current `application.yml` file with the contents of [this application.yml](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/main/config/06b_application.yml) file. Make sure you fill out your current Key Vault name on line `36` and the name of your event hub namespace on line `54`. This file includes the following changes:
 
    - An additional `consume` binding for the `$Default` consumer group of the `telemetry` event hub on line `40` to `42`.
    - An additional `checkpoint-store` for the `eventshubs-binder` container of your storage account on lines `56` to `58`. Make sure you fill out the name of your storage account on line `58`.
