@@ -74,7 +74,7 @@ To get started, follow the following steps:
 
 1. In workspaces folder double check that the spring petclinic application got cloned correctly. You can use the repository in your workspaces folder to regularly push your changes to.
 
-  > **Note**: However in one of the lab steps you will put a GitHub PAT token in one of the configuration files, make sure to **not** commit this PAT token, since it will immediately get invalidated by GitHub. Once invalidated your next lab steps will fail. You can use the [LabTips]({% link LabTips.md %}) to recover from this.
+   > **Note**: However in one of the lab steps you will put a GitHub PAT token in one of the configuration files, make sure to **not** commit this PAT token, since it will immediately get invalidated by GitHub. Once invalidated your next lab steps will fail. You can use the [LabTips]({% link LabTips.md %}) to recover from this.
 
 1. Navigate into the `Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/src` folder that got created.
 
