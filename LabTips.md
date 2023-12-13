@@ -109,8 +109,8 @@ So no worries, make your config repo public and proceed!
 
 In case you are using a codespace for running this lab, your environment variables will be lost if the codespace restarts. For persisting these environment variables, you can either use the [guidance that GitHub provides for this](https://docs.github.com/en/enterprise-cloud@latest/codespaces/developing-in-codespaces/persisting-environment-variables-and-temporary-files). We recommend the [single workspace](https://docs.github.com/en/enterprise-cloud@latest/codespaces/developing-in-codespaces/persisting-environment-variables-and-temporary-files#for-a-single-codespace) approach, since that is the easiest to set up and doesn't require workspace restart.
 
-You can find a [samplebashrc file](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/blob/main/solution/samplebashrc) in this repository. You will need to update a couple of values in this file for your specific situation.
+You can find a [samplebashrc file](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/blob/main/solution/samplebashrc) in this repository. You will need to update a couple of values in this file for your specific situation.
 
 Another approach would be to create a dedicated _.azcli_ file where you keep all environment variables. After a workspace restart, you first rerun all the steps in this file and you are good to go again.
 
-You can find a [sampleENVIRONMENT.azcli file](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-Applications-in-Azure-Spring-Apps/blob/main/solution/sampleENVIRONMENT.azcli) in this repository. You will need to update a couple of values in this file for your specific situation.
+You can find a [sampleENVIRONMENT.azcli file](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/blob/main/solution/sampleENVIRONMENT.azcli) in this repository. You will need to update a couple of values in this file for your specific situation.
