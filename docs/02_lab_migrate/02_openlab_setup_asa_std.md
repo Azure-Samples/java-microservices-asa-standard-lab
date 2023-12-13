@@ -45,4 +45,5 @@ During this challenge, you will:
 - Provide publicly available endpoints for the Spring Petclinic application
 - Test the application through the publicly available endpoints
 
-> **Note**: Follow the steps in the [install instructions]({% link install.md %}) to set up this lab on your platform of choice.
+   {: .note }
+   > Follow the steps in the [install instructions]({% link install.md %}) to set up this lab on your platform of choice.

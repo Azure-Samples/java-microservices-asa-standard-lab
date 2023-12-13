@@ -40,7 +40,8 @@ In this challenge, you will:
 - Configure diagnostics settings
 - Analyze logs
 
-> **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+   {: .note }
+   > The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
 
 ### Live stream the logs from your apps
 
@@ -90,7 +91,8 @@ You now know how to live stream any logs to your console. Next, you will configu
        -n $SPRING_APPS_SERVICE
    ```
 
-    > **Note**: This should generate an output that resembles the following content:
+   {: .note }
+   > This should generate an output that resembles the following content:
 
    ```json
    {
@@ -105,7 +107,8 @@ You now know how to live stream any logs to your console. Next, you will configu
    }
    ```
 
-    > **Note**: This output indicates that Application Insights is enabled and that your apps are sending monitoring data to Application Insights. In case you see different output, where there is no instrumentation key, you will need to reconfigure Application Insights. In that case follow the next steps.
+   {: .note }
+   > This output indicates that Application Insights is enabled and that your apps are sending monitoring data to Application Insights. In case you see different output, where there is no instrumentation key, you will need to reconfigure Application Insights. In that case follow the next steps.
 
 1. To re-enable Application Insights, you will first need to retrieve the instrumentation key of your Application Insights instance.
 
@@ -166,7 +169,8 @@ Use this guidance to review such Application Insights features as:
 
 1. Select **Investigate performance**. This will automatically open the **Performance** page displaying detailed performance data related to operations, dependencies, and roles.
 
-    > **Note**: You can select a specific time period in the graph, which will automatically adjust the view of the performance data.
+   {: .note }
+   > You can select a specific time period in the graph, which will automatically adjust the view of the performance data.
 
 1. Navigate back to the **Application map** page.
 
@@ -183,7 +187,8 @@ Use this guidance to review such Application Insights features as:
 
 1. Accept the default values for all other settings. Notice that alerts are automatically enabled.
 
-       > **Note**: Once the configuration is completed, the availability of your app will be tested every 5 minutes from 5 different locations.
+      {: .note }
+   > Once the configuration is completed, the availability of your app will be tested every 5 minutes from 5 different locations.
 
 1. Select the three dots to the right of the newly configured availability test and select **Open Rules (Alerts) page**.
 
@@ -284,7 +289,8 @@ Application Insights allows you to monitor app-specific logs. To retrieve additi
        --metrics @metrics.json
    ```
 
-    > **Note**: This will start log collection. It might take some time before log data is accessible from the Log Analytics workspace. In the next task, you query this data.
+   {: .note }
+   > This will start log collection. It might take some time before log data is accessible from the Log Analytics workspace. In the next task, you query this data.
 
 </details>
 
@@ -304,7 +310,8 @@ Use this guidance to:
 <summary>hint</summary>
 <br/>
 
-    > **Note**: Before you start reviewing logs, generate some log entries by navigating to the api-gateway URL and, from the PetClinic home page, performing the following tasks:
+   {: .note }
+   > Before you start reviewing logs, generate some log entries by navigating to the api-gateway URL and, from the PetClinic home page, performing the following tasks:
 
    - Navigate to the Owners page, select a few names from the list
    - For a few owners you selected, use the **Edit Owner** button to attempt modifying their information (for example, try setting the telephone number to an invalid value) and use the **Add New Pet** button to attempt to add a pet (for example, select the Submit button without providing the pet name).
@@ -315,7 +322,8 @@ Use this guidance to:
 
 1. On the **Tables** tab, review the list of tables and verify that they include `AppPlatformContainerEventLogs`, `AppPlatformIngressLogs`, `AppPlatformLogsforSpring`, `AppPlatformSystemLogs`, `AzureMetrics` and `AppPlatformBuildLogs`.
 
-    > **Note**: Not all of these categories might be available at this point yet. It might take extra time for the logging data to appear in the Log Analytics workspace. If needed, wait for a few minutes and refresh the web page displaying the Azure portal.
+   {: .note }
+   > Not all of these categories might be available at this point yet. It might take extra time for the logging data to appear in the Log Analytics workspace. If needed, wait for a few minutes and refresh the web page displaying the Azure portal.
 
 1. In the query editor, enter the following query and select **Run**.
 
@@ -325,7 +333,8 @@ Use this guidance to:
    | project TimeGenerated , ServiceName , AppName , InstanceName , Log
    ```
 
-    > **Note**: The results of the query will display the log entries that represent error or exception events.
+   {: .note }
+   > The results of the query will display the log entries that represent error or exception events.
 
 1. In the query editor, replace the previous query with the following one and select **Run**.
 
@@ -336,7 +345,8 @@ Use this guidance to:
    | sort by TimeGenerated
    ```
 
-    > **Note**: The results of the query will display the ingress logs.
+   {: .note }
+   > The results of the query will display the ingress logs.
 
 1. In the query editor, replace the previous query with the following one and select **Run**.
 
@@ -346,7 +356,8 @@ Use this guidance to:
    | sort by TimeGenerated
    ```
 
-    > **Note**: The results of the query will display the container event logs.
+   {: .note }
+   > The results of the query will display the container event logs.
 
 1. You can also display the results of the queries by using a time chart. To do so, replace the previous query with the following one and select **Run**.
 

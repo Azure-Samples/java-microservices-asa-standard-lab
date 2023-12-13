@@ -38,7 +38,8 @@ During this challenge, you will:
 - Update the remaining microservice to use the message queues
 - Add the message producers and listeners
 
-    > **Note**: The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
+   {: .note }
+   > The instructions provided in this exercise assume that you successfully completed the previous exercise and are using the same lab environment, including your Git Bash session with the relevant environment variables already set.
 
 ### Create Azure Service Bus resources
 
@@ -49,7 +50,8 @@ First, you need to create an Azure Service Bus namespace and one or more queues 
 
 Make sure to create the Service Bus namespace with the **Premium** SKU, since this is required in order to support JMS 2.0 messaging. You should also add a connection string to your Service Bus namespace in the Key Vault instance you provisioned earlier in this lab, so the microservices can retrieve its value.
 
-    > **Note**: As a more secure alternative, you could use managed identities associated with your microservices to connect directly to the Service Bus namespace. However, in this lab, you will store the connection string in your Key Vault.
+   {: .note }
+   > As a more secure alternative, you could use managed identities associated with your microservices to connect directly to the Service Bus namespace. However, in this lab, you will store the connection string in your Key Vault.
 
 The connection to the Service Bus needs to be stored in the `spring.jms.servicebus.connection-string` application property. Name your Key Vault secret `SPRING-JMS-SERVICEBUS-CONNECTIONSTRING` and add the following section to the `application.yml` file in your configuration repository.
 
@@ -61,7 +63,8 @@ The connection to the Service Bus needs to be stored in the `spring.jms.serviceb
          pricing-tier: premium
    ```
 
-> **Note**: Particular attention to indentation as shown above is important: `jms` should be at the same indentation level as `config`, `datasource` and `cloud`.
+   {: .note }
+   > Particular attention to indentation as shown above is important: `jms` should be at the same indentation level as `config`, `datasource` and `cloud`.
 
 This translates the secret in Key Vault to the correct application property for your microservices. This usage of properties is described in the following documentation: [Special Characters in Property Name](https://microsoft.github.io/spring-cloud-azure/current/reference/html/index.html#special-characters-in-property-name).
 
@@ -81,7 +84,8 @@ This translates the secret in Key Vault to the correct application property for 
        --sku Premium
    ```
 
-    > **Note**: Wait for the operation to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for the operation to complete. This might take about 5 minutes.
 
 1. Next, create a queue in this namespace named `visits-requests`.
 
@@ -160,7 +164,8 @@ In the spring-petclinic-microservices repository, the `spring-petclinic-messagin
        --assign-endpoint true
    ```
 
-    > **Note**: Wait for the provisioning to complete. This might take about 3 minutes.
+   {: .note }
+   > Wait for the provisioning to complete. This might take about 3 minutes.
 
 1. Create a new user assigned managed identity for this new application and assign it to the `messaging-emulator` app:
 
@@ -212,7 +217,8 @@ In the spring-petclinic-microservices repository, the `spring-petclinic-messagin
 
 1.  In the navigation menu, in the **Settings** section, select **Apps**, wait until the **Provisioning state** of the `messaging-emulator` app changes to **Succeeded**, and then select the `messaging-emulator` app entry.
 
-     > **Note**: The provisioning might take about 3 minutes. Select **Refresh** in order to update the provisioning status.
+    {: .note }
+   > The provisioning might take about 3 minutes. Select **Refresh** in order to update the provisioning status.
 
 1. Once provisioning is complete. Select the apps URL and open this in a new browser window.
 

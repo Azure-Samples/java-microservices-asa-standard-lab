@@ -85,7 +85,8 @@ In case you made an error in the config repo. Fixing that error in the config re
    az spring app restart <service-name>
    ```
 
-   > **Note**: You can also double check the output logs or the log tables for additional error messages related to bad config.
+      {: .note }
+   > You can also double check the output logs or the log tables for additional error messages related to bad config.
 
 ## Not all steps are running smoothly in the codespace (unfortunately)
 

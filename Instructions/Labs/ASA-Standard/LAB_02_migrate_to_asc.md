@@ -44,7 +44,8 @@ During this challenge, you will:
 - Provide publicly available endpoints for the Spring Petclinic application
 - Test the application through the publicly available endpoints
 
-> **Note**: Follow the steps in the [install instructions](../../../install.md) to set up this lab on your platform of choice.
+   {: .note }
+   > Follow the steps in the [install instructions](../../../install.md) to set up this lab on your platform of choice.
 
 ### Create an Azure Spring Apps service
 
@@ -62,7 +63,8 @@ As the first step, you will create an Azure Spring Apps Service instance. You wi
    az login
    ```
 
-> **Note**: In case you are running this lab in a GitHub codespace, use `az login --use-device-code`.
+   {: .note }
+   > In case you are running this lab in a GitHub codespace, use `az login --use-device-code`.
 
 1. Executing the command will automatically open a web browser window prompting you to authenticate. Once prompted, sign in using the user account that has the Owner role in the target Azure subscription that you will use in this lab and close the web browser window.
 
@@ -110,9 +112,11 @@ As the first step, you will create an Azure Spring Apps Service instance. You wi
                     --sku Standard
    ```
 
-    > **Note**: This will also create for you an Application Insights resource. 
+   {: .note }
+   > This will also create for you an Application Insights resource. 
 
-    > **Note**: Wait for the provisioning to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for the provisioning to complete. This might take about 5 minutes.
 
 1. Run the following command to set your default resource group name and Spring Apps service name. By setting these defaults, you don't need to repeat these names in the subsequent commands.
 
@@ -126,9 +130,11 @@ As the first step, you will create an Azure Spring Apps Service instance. You wi
 
 1. On the resource group overview pane, verify that the resource group contains an Azure Spring Apps instance.
 
-    > **Note**: In case you don't see the Azure Spring Apps service in the overview list of the resource group, select the **Refresh** toolbar button to refresh the view of the resource groups.
+   {: .note }
+   > In case you don't see the Azure Spring Apps service in the overview list of the resource group, select the **Refresh** toolbar button to refresh the view of the resource groups.
 
-    > **Note**: You will notice an Application Insights resource also was created in your resource group. You will use this in one of the next labs.
+   {: .note }
+   > You will notice an Application Insights resource also was created in your resource group. You will use this in one of the next labs.
 
 1. Select the Azure Spring Apps instance and, in the vertical navigation menu, in the **Settings** section, select **Apps**. Note that the instance does not include any spring apps at this point. You will perform the app deployment later in this exercise.
 
@@ -149,7 +155,8 @@ As part of the setup process, you need to create a Personal Access Token (PAT) i
 
 1. On your lab computer, in your web browser, navigate to your GitHub account, navigate to the **Repositories** page and create a new private repository named **spring-petclinic-microservices-config**.
 
-    > **Note**: Make sure to configure the repository as private. In one of the exercises this config repository will contain a secret value.
+   {: .note }
+   > Make sure to configure the repository as private. In one of the exercises this config repository will contain a secret value.
 
 1. To create a PAT, select the avatar icon in the upper right corner, and then select **Settings**.
 
@@ -157,13 +164,15 @@ As part of the setup process, you need to create a Personal Access Token (PAT) i
 
 1. On the **New personal access token** page, in the **Note** text box, enter a descriptive name, such as **spring-petclinic-config-server-token**.
 
-    > **Note**: There is a new **Beta** experience available on GitHub for more fine-grained access tokens. This experience will create a token with a more limited scope than full repository scope (which basically gives access to all your repositories). The lab will work as well with a more fine-grained token, in that case, in the **Fine-grained tokens (Beta)** token creation page, choose for **Only select repositories** and select your config repository. For the **Repository permissions** select for the **Contents** the **Read-only** access level. You can use this fine-grained token when you configure your config-server on Azure Spring Apps. We recommend you create a second token in case you also need a personal access token for interacting with the repositories from the Git Bash prompt.
+   {: .note }
+   > There is a new **Beta** experience available on GitHub for more fine-grained access tokens. This experience will create a token with a more limited scope than full repository scope (which basically gives access to all your repositories). The lab will work as well with a more fine-grained token, in that case, in the **Fine-grained tokens (Beta)** token creation page, choose for **Only select repositories** and select your config repository. For the **Repository permissions** select for the **Contents** the **Read-only** access level. You can use this fine-grained token when you configure your config-server on Azure Spring Apps. We recommend you create a second token in case you also need a personal access token for interacting with the repositories from the Git Bash prompt.
 
 1. In the **Select scopes** section, select **repo** and then select **Generate token**.
 
 1. Record the generated token. You will need it in this and subsequent labs.
 
-    > **Note**: You can check the validity of your token with the following statement: `curl -XGET -H 'authorization: token <token_value>' 'https://api.github.com/repos/<user_name>/spring-petclinic-microservices-config'`. This statement should succeed. If it does not, redo the above steps for generating the PAT token.
+   {: .note }
+   > You can check the validity of your token with the following statement: `curl -XGET -H 'authorization: token <token_value>' 'https://api.github.com/repos/<user_name>/spring-petclinic-microservices-config'`. This statement should succeed. If it does not, redo the above steps for generating the PAT token.
 
 1. From the Git Bash prompt, change the current directory to the **workspaces** folder. Next, clone the newly created GitHub repository by typing `git clone `, pasting the clone URL you copied into Clipboard in the previous step, and entering the PAT string followed by the `@` symbol in front of `github.com`. In case you haven't already you can also clone here your code repository.
 
@@ -177,7 +186,8 @@ As part of the setup process, you need to create a Personal Access Token (PAT) i
 
    ```
 
-     > **Note**: Make sure to replace the `<token>` and `<your-github-username>` placeholders in the URL listed above with the value of the GitHub PAT and your GitHub user name when running the `git clone` command.
+    {: .note }
+   > Make sure to replace the `<token>` and `<your-github-username>` placeholders in the URL listed above with the value of the GitHub PAT and your GitHub user name when running the `git clone` command.
 
 1. From the Git Bash prompt, change the current directory to the newly created **spring-petclinic-microservices-config** folder and run the following commands to copy all the config server configuration yaml files from the [config folder of this labs' GitHub repository](https://github.com/Azure-Samples/java-microservices-asa-standard-lab/tree/master/config) to the local folder on your lab computer.
 
@@ -219,7 +229,8 @@ Once you completed the initial update of your git repository hosting the server 
 
 1. Switch to the Git Bash prompt and run the following commands to set the environment variables hosting your GitHub repository and GitHub credentials (replace the `<git-repository>`, `<git-username>`, and `<git-PAT>` placeholders with the URL of your GitHub repository, the name of your GitHub user account, and the newly generated PAT value, respectively).
 
-    > **Note**: The URL of the GitHub repository should be in the format `https://github.com/<your-github-username>/spring-petclinic-microservices-config.git`, where the `<your-github-username>` placeholder represents your GitHub user name.
+   {: .note }
+   > The URL of the GitHub repository should be in the format `https://github.com/<your-github-username>/spring-petclinic-microservices-config.git`, where the `<your-github-username>` placeholder represents your GitHub user name.
 
    ```bash
    GIT_REPO=<git-repository>
@@ -239,9 +250,11 @@ Once you completed the initial update of your git repository hosting the server 
                            --username $GIT_USERNAME 
    ```
 
-    > **Note**: In case you are using a branch other than `main` in your config repo, you can change the branch name with the `label` parameter.
+   {: .note }
+   > In case you are using a branch other than `main` in your config repo, you can change the branch name with the `label` parameter.
 
-    > **Note**: Wait for the operation to complete. This might take about 2 minutes.
+   {: .note }
+   > Wait for the operation to complete. This might take about 2 minutes.
 
 </details>
 
@@ -272,9 +285,11 @@ You will also need to update the config for your applications to use the newly p
         --resource-group ${RESOURCE_GROUP} 
    ```
 
-    > **Note**: During the creation you will be asked whether access for your IP address should be added and whether access for all IP's should be added. Answer `n` for no on both questions.
+   {: .note }
+   > During the creation you will be asked whether access for your IP address should be added and whether access for all IP's should be added. Answer `n` for no on both questions.
 
-    > **Note**: Wait for the provisioning to complete. This might take about 3 minutes.
+   {: .note }
+   > Wait for the provisioning to complete. This might take about 3 minutes.
 
 1. Once the Azure Database for MySQL Single Server instance gets created, it will output details about its settings. In the output, you will find the server connection string. Record its value since you will need it later in this exercise.
 
@@ -316,7 +331,8 @@ You will also need to update the config for your applications to use the newly p
 
 </details>
 
-    > **Note**: At this point, the admin account user name and password are stored in clear text in the application.yml config file. In one of upcoming exercises, you will remediate this potential vulnerability by removing clear text credentials from your configuration.
+   {: .note }
+   > At this point, the admin account user name and password are stored in clear text in the application.yml config file. In one of upcoming exercises, you will remediate this potential vulnerability by removing clear text credentials from your configuration.
 
 ### Deploy the Spring Petclinic app components to the Spring Apps service
 
@@ -324,7 +340,8 @@ You now have the compute and data services available for deployment of the compo
 
 - [Guidance on creating apps on Azure Spring Apps](https://learn.microsoft.com/azure/spring-apps/quickstart-deploy-apps?tabs=Azure-CLI&pivots=programming-language-java).
 
-    > **Note**: The `spring-petclinic-api-gateway` and `spring-petclinic-admin-server` will have a public endpoint assigned to them.
+   {: .note }
+   > The `spring-petclinic-api-gateway` and `spring-petclinic-admin-server` will have a public endpoint assigned to them.
 
 <details>
 <summary>hint</summary>
@@ -393,7 +410,8 @@ You now have the compute and data services available for deployment of the compo
             --assign-endpoint true
    ```
 
-    > **Note**: Wait for the provisioning to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for the provisioning to complete. This might take about 5 minutes.
 
 1. Next deploy the jar file to this newly created app by running the following command from the Git Bash prompt:
 
@@ -419,7 +437,8 @@ You now have the compute and data services available for deployment of the compo
             --artifact-path ${ADMIN_SERVER_JAR}
    ```
 
-    > **Note**: Wait for each operation to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for each operation to complete. This might take about 5 minutes.
 
 1. Next, you will create, and deploy an app for the `customers-service` microservice, without assigning an endpoint:
 
@@ -434,7 +453,8 @@ You now have the compute and data services available for deployment of the compo
             --artifact-path ${CUSTOMERS_SERVICE_JAR}
    ```
 
-    > **Note**: Wait for each operation to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for each operation to complete. This might take about 5 minutes.
 
 1. Once deployed, take a look at the `customers-service` logs to make sure the configuration gets picked up correctly and there are no errors on startup.
 
@@ -442,7 +462,8 @@ You now have the compute and data services available for deployment of the compo
    az spring app logs --name ${CUSTOMERS_SERVICE} --follow 
    ```
 
-    > **Note**: In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+   {: .note }
+   > In case you see no errors, you can escape out of the log statement with `Ctrl+C` and you can proceed with the next steps. In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
 
 1. Next, you will create, and deploy an app for the `visits-service` microservice, also without an endpoint assigned:
 
@@ -457,7 +478,8 @@ You now have the compute and data services available for deployment of the compo
                --artifact-path ${VISITS_SERVICE_JAR} 
    ```
 
-    > **Note**: Wait for each operation to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for each operation to complete. This might take about 5 minutes.
 
 1. To conclude, you will create, and deploy an app for the `vets-service` microservice, again without an endpoint assigned:
 
@@ -472,7 +494,8 @@ You now have the compute and data services available for deployment of the compo
                --artifact-path ${VETS_SERVICE_JAR}
    ```
 
-    > **Note**: Wait for each operation to complete. This might take about 5 minutes.
+   {: .note }
+   > Wait for each operation to complete. This might take about 5 minutes.
 
 </details>
 

@@ -101,9 +101,11 @@ Given the above constraints and feature sets, in the case of the Spring Petclini
 
 </details>
 
-   > **Note**: An additional option would be [Azure Red Hat OpenShift](https://learn.microsoft.com/azure/openshift/intro-openshift). This would provide you a similar set of advantages and disadvantages as an Azure Kubernetes Service, but with added functionality provided by Red Hat.
+      {: .note }
+   > An additional option would be [Azure Red Hat OpenShift](https://learn.microsoft.com/azure/openshift/intro-openshift). This would provide you a similar set of advantages and disadvantages as an Azure Kubernetes Service, but with added functionality provided by Red Hat.
 
-   > **Note**: You can find additional guidance on possible Azure services to migrate Java workloads to in the [Compare Java application hosting options on Azure](https://learn.microsoft.com/azure/architecture/guide/technology-choices/service-for-java-comparison) architecture center article.
+      {: .note }
+   > You can find additional guidance on possible Azure services to migrate Java workloads to in the [Compare Java application hosting options on Azure](https://learn.microsoft.com/azure/architecture/guide/technology-choices/service-for-java-comparison) architecture center article.
 
 ### Consider the Azure services most suitable for storing data of your application
 
@@ -190,7 +192,8 @@ There are other tools you will use as well (including Git and mvn), but the port
 
 You also should record any commands and scripts you execute for later reference. This will help you in the subsequent exercises, in case you need to reuse them to repeat the same sequence of steps.
 
-   > **Note**: In the lab runthroughs you will make a lot of use of Azure CLI statements. In case you are using Visual Studio Code, you can record your statements in a file with the **.azcli** extension. This extension in combination with the [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) give you extra capabilities like IntelliSense and directly running a statement from the script file in the terminal window.
+      {: .note }
+   > In the lab runthroughs you will make a lot of use of Azure CLI statements. In case you are using Visual Studio Code, you can record your statements in a file with the **.azcli** extension. This extension in combination with the [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli) give you extra capabilities like IntelliSense and directly running a statement from the script file in the terminal window.
 
 - What additional tools would you need to perform the migration?
 

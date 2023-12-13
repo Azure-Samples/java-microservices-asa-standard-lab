@@ -338,7 +338,8 @@ You will now implement the functionality that will allow you to emulate sending 
    az spring app logs --name ${CUSTOMERS_SERVICE} --follow
    ```
 
-    > **Note**: In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+   {: .note }
+   > In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
 
 1. With the log stream still open, in your browser window, navigate to the applications public endpoint and select `Owners - Register`. On the registration page, fill out the details for a new owner and select `Submit`. When you select `Submit` you should see output in the `customers` service logs indicating events were send to the eventhub. 
 
@@ -552,13 +553,15 @@ To conclude this lab, you will create another owner in the application to send e
    az spring app logs --name ${VETS_SERVICE} --follow
    ```
 
-    > **Note**: In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
+   {: .note }
+   > In case you see errors, review the steps you executed and retry. The [LabTips file](../../../LabTips.md) also contains steps on how to recover from errors.
 
 1. In your browser window, navigate to the applications' public endpoint and select `Owners - Register`. On the registration page, fill out the details for a new owner and select `Submit`. When you select `Submit` you should see output in the `vets` service logs indicating events were received from the eventhub. 
 
 1. Switch to the web browser displaying the Azure portal, navigate to the page of the resource group containing resources you provisioned in this lab, and select the entry representing your Event Hub namespace.
 
-    > **Note**: In case you don't see your Event Hub namespace in the list, select the refresh button.
+   {: .note }
+   > In case you don't see your Event Hub namespace in the list, select the refresh button.
 
 1. On the Event Hub namespace page, in the navigation menu, in the **Entities** section, select **Event Hubs** and then select the `telemetry` event hub entry.
 
