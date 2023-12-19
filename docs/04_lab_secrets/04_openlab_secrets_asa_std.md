@@ -23,14 +23,10 @@ After you complete this lab, you will be able to:
 - Grant the managed identity permissions to access the Azure Key Vault secrets
 - Update application config
 - Update, rebuild, and redeploy each app
-- Delete secrets from Key Vault
-- Create an admin account for the MySQL Flexible Server
-- Create service connections from the microservices to the database server
-- Update the applications to use passwordless connectivity
 
 The below image illustrates the end state you will be building in this lab.
 
-![Lab 4 architecture](../images/asa-openlab-4b.png)
+![Lab 4 architecture](../images/asa-openlab-4.png)
 
 ## Lab Duration
 
